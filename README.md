@@ -1,5 +1,8 @@
 # Informacion General
 
+[APK Pruebas](https://developers.google.com/maps/documentation/android-sdk/start?hl=es-419) Puedes descargar el Apk desde aqui
+
+
 El siguiente es un proyecto de prueba creado para mostrar una sencilla app de recetas de cocinas con opciones basicas como buscador, conexion a API, maps, y reproductor de videos.
 
 para compilar el app deberas ubicar el archivo Preferences y sustituir los siguientes valores : 

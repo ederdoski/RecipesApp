@@ -23,8 +23,8 @@ public class Preferences {
 
     //----------------------------- Get Preferences ---------------------------------------------
 
-    public String getRapidKey() { return getStringValue(context, RAPID_KEY, "c155fa45bbmshc56e1743aa4d94fp10b94cjsn083f93254542"); }
-    public String getRapidHost() { return getStringValue(context, RAPID_HOST, "tasty.p.rapidapi.com"); }
+    public String getRapidKey() { return getStringValue(context, RAPID_KEY, ""); }
+    public String getRapidHost() { return getStringValue(context, RAPID_HOST, ""); }
 
     /*---------------------------------------------------------------------------*/
 

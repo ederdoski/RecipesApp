@@ -1,4 +1,4 @@
-# General Information 
+# Informacion General
 
 Arquitectura: 
 

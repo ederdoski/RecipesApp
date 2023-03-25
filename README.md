@@ -1,5 +1,20 @@
 # Informacion General
 
+El siguiente es un proyecto de prueba creado para mostrar una sencilla app de recetas de cocinas con opciones basicas como buscador, conexion a API, maps, y reproductor de videos.
+
+para compilar el app deberas ubicar el archivo Preferences y sustituir los siguientes valores : 
+
+```sh
+RAPID_KEY
+RAPID_HOST
+```
+
+estos valores los podras obtener registrandote en esta web : 
+
+[Tasty](https://rapidapi.com/apidojo/api/tasty/) web usada para obtener credenciales del API 
+
+[GoogleMap Android ](https://developers.google.com/maps/documentation/android-sdk/start?hl=es-419) configurar un proyecto para android.
+
 Arquitectura: 
 
 Para este proyecto decidí usar la arquitectura MVVM (Model-View-ViewModel) con una arquitectura reactiva. Esta arquitectura es ideal para proyectos Android ya que nos permite separar la lógica de nuestra aplicación de la interfaz de usuario, lo que hace que nuestra aplicación sea más sencilla de mantener y escalar.

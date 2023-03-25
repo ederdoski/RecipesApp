@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">RecipesApp</string>
+
+    <!-- Recipes List -->
+
+    <string name="txt_title_recipe_list">Ready for cooking?</string>
+    <string name="txt_title_recipe_search_hint">Search: Chocolate Chips</string>
+
+    <!-- Recipes Detail -->
+
+    <string name="txt_recipe_detail_preparation">Preparation: %1$d min</string>
+    <string name="txt_recipe_detail_cook">Cooking: %1$d min</string>
+    <string name="txt_recipe_detail_instructions">Instructions: </string>
+    <string name="txt_recipe_detail_video">Show me the preparation !</string>
+
+    <!-- Generic Errors -->
+
+    <string name="txt_title_generic_error">We’re sorry</string>
+    <string name="txt_description_generic_error">Currently, we’re not able to connect with our servers. Please check if you have internet connection.</string>
+    <string name="btn_try_again_generic_error">Try again</string>
+    <string name="txt_title_something_wrong">Oops, something went wrong</string>
+    <string name="txt_title_network_error">Oops…\nNo internet connection</string>
+    <string name="txt_description_network_error">Make sure wifi or cellular data is turned on an then try again </string>
+
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/BoldFontStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_20sdp"
+            android:text="@string/txt_title_recipe_list"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/listOfRecipes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgSearch"
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:src="@drawable/ic_search"
+            android:elevation="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/edtSearch"
+            app:layout_constraintEnd_toEndOf="@+id/edtSearch"
+            app:layout_constraintTop_toTopOf="@+id/edtSearch" />
+
+        <ImageView
+            android:id="@+id/imgClear"
+            android:visibility="gone"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:src="@drawable/ic_cancel"
+            android:elevation="@dimen/_1sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/edtSearch"
+            app:layout_constraintEnd_toEndOf="@+id/edtSearch"
+            app:layout_constraintTop_toTopOf="@+id/edtSearch"
+            app:tint="@color/black" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg_border_gray"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            android:hint="@string/txt_title_recipe_search_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listOfRecipes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+
+            android:requiresFadingEdge="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:useDefaultMargins="true"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSearch"
+            app:spanCount="2"
+            tools:listitem="@layout/recipes_view_cell" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

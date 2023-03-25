@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "198505820274",
+    "project_id": "trufisapp",
+    "storage_bucket": "trufisapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:198505820274:android:9a2d1b64ad505b87eb92eb",
+        "android_client_info": {
+          "package_name": "com.recipess.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "198505820274-aenlul5gp1qhb80vtvesgpg519mbp21t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmR8_NzQG5m27Q69ZEQqyKhSDGLPyz0iQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "198505820274-aenlul5gp1qhb80vtvesgpg519mbp21t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

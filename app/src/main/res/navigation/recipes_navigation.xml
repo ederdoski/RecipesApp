@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/RecipesViewFragment">
+
+    <fragment
+        android:id="@+id/RecipesViewFragment"
+        android:name="com.recipess.app.features.recipes.view.RecipesViewFragment"
+        android:label="RecipesViewFragment"
+        tools:layout="@layout/layout_recipes_view_fragment">
+        <action
+            android:id="@+id/action_RecipesViewFragment_to_RecipesDetailViewFragment"
+            app:destination="@id/RecipesDetailViewFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecipesDetailViewFragment"
+        android:name="com.recipess.app.features.recipes.view.RecipesDetailViewFragment"
+        android:label="RecipesDetailViewFragment"
+        tools:layout="@layout/layout_recipes_detail_view_fragment">
+
+        <argument
+            android:name="recipeData"
+            app:argType="com.recipess.app.features.recipes.datasource.model.RecipeData"
+            app:nullable="false" />
+
+        <action
+            android:id="@+id/action_RecipesDetailViewFragment_to_RecipesVideoViewFragment"
+            app:destination="@id/RecipesVideoViewFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RecipesVideoViewFragment"
+        android:name="com.recipess.app.features.recipes.view.RecipeVideoViewFragment"
+        android:label="RecipesVideoViewFragment"
+        tools:layout="@layout/layout_recipes_video_view_fragment">
+
+        <argument
+            android:name="url"
+            app:argType="string"
+            app:nullable="false" />
+
+    </fragment>
+
+</navigation>
